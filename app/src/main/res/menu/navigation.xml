@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_reports"
+        android:icon="@drawable/analytics_two"
+        android:title="Reports" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/mail"
+        android:title="chat"/>
+
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Share" />
+    <item
+        android:id="@+id/nav_send"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Send Your Reports" />
+
+
+</menu>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ScrollingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@drawable/gg1"
+        android:transitionName="buttontransition"
+
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_jap" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".JapActivity">
+
+    <ImageView
+        android:id="@+id/japButton2"
+        android:layout_width="match_parent"
+        android:transitionName="buttontransition"
+        android:layout_height="200dp"
+        android:background="@drawable/gg1"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Mode of Jap"
+        android:fontFamily= "monospace"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/options"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        >
+
+    </Spinner>
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+
+        />
+    <TextView
+        android:id="@+id/timer_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/blueColor"
+        android:visibility="invisible"
+        android:text=" "
+        />
+
+    <VideoView
+        android:id="@+id/videoViewV"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="220dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/time_in_milli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/display_selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/startJap"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Start Jap"
+        android:textColor="#ffffff"
+        android:background="@drawable/background"
+        />
+    <Button
+        android:id="@+id/stopJap"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:textColor="#ffffff"
+        android:text="@string/stop_jap"
+         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:id="@+id/swadhyayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swadhyay"
+
+        />
+    <Button
+        android:id="@+id/nextActivity"
+        android:text="Meditation"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/reportsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Reports"
+
+        />
+        <Button
+            android:id="@+id/yagyaActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yagya"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>-->

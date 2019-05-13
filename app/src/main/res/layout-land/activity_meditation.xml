@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/medButton2"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:transitionName="buttontransition"
+    android:background="@drawable/gg2"
+
+    />
+    <TextView
+        android:id="@+id/soundTrackName"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="30sp"
+        android:text="random"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/framebg"
+        android:paddingBottom="12dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <com.gauravk.audiovisualizer.visualizer.WaveVisualizer
+            xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/blast"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            custom:avDensity="0.7"
+            android:layout_marginTop="240dp"
+            custom:avType="fill"
+            android:paddingBottom="18dp"
+            android:visibility="invisible"
+            android:padding="18dp"
+            android:alpha="0.7"
+            custom:avWidth="280dp"
+            custom:avColor="@color/av_red"
+            custom:avSpeed="fast"/>
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="260dp"
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:text="Play"
+            android:background="@drawable/background"
+            />
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="100dp"
+            android:layout_marginStart="30dp"
+            android:layout_height="50dp"
+            android:text="pause"
+            android:background="@drawable/background"
+            />
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background"
+            android:text="stop"
+            android:layout_marginStart="30dp"
+            />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
